@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albert Bielashov | Technical Artist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #121212;
+            --surface-color: #1e1e1e;
+            --text-main: #f0f0f0;
+            --text-muted: #a0a0a0;
+            --accent: #e6c7a3;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: var(--text-main);
+        }
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent);
+            font-weight: 400;
+            margin-top: 10px;
+        }
+        .summary {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 20px auto;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--bg-color);
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: opacity 0.3s;
+        }
+        .btn:hover {
+            opacity: 0.8;
+        }
+        .section-title {
+            border-bottom: 2px solid var(--surface-color);
+            padding-bottom: 10px;
+            margin-top: 50px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .card {
+            background-color: var(--surface-color);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+        }
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .card a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .card a:hover {
+            text-decoration: underline;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .skill-tag {
+            background-color: var(--surface-color);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid #333;
+        }
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid var(--surface-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        .social-links a {
+            color: var(--text-main);
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
 
+<div class="container">
+    <header>
+        <h1>Albert Bielashov</h1>
+        <h2>Junior Technical Artist & Game Developer</h2>
+        <p class="summary">
+            Specializing in Unreal Engine 5, Unity, and bridging the gap between art and programming. Experienced in asset pipeline optimization, shaders, and QA.
+        </p>
+        <a href="Albert_Bielashov_TechArt.pdf" class="btn" target="_blank">Download Resume (PDF)</a>
+    </header>
+
+    <h2 class="section-title">Published Titles (Tech Art & QA)</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Castle of Secrets</h3>
+            <p>Asset integration, material configuration, and optimization.</p>
+            <a href="#" target="_blank">View on Steam →</a>
+        </div>
+        <div class="card">
+            <h3>CUBESCAPE</h3>
+            <p>Rendering performance testing and technical bug tracking.</p>
+            <a href="#" target="_blank">View on Steam →</a>
+        </div>
+        <div class="card">
+            <h3>Fear Underground</h3>
+            <p>Quality assurance and collision debugging for release.</p>
+            <a href="#" target="_blank">View on Steam →</a>
+        </div>
+        <div class="card">
+            <h3>CLOWNOUT</h3>
+            <p>Technical support and environmental asset setup.</p>
+            <a href="#" target="_blank">View on Steam →</a>
+        </div>
+    </div>
+
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-list">
+        <span class="skill-tag">Unreal Engine 5</span>
+        <span class="skill-tag">Unity</span>
+        <span class="skill-tag">C++</span>
+        <span class="skill-tag">C#</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Material Editor</span>
+        <span class="skill-tag">QA Testing</span>
+        <span class="skill-tag">Git / GitHub</span>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/albert-bielashov-618b68340/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/asciif" target="_blank">GitHub</a>
+            <a href="mailto:czal1332bert@gmail.com">czal1332bert@gmail.com</a>
+        </div>
+        <p>&copy; 2026 Albert Bielashov</p>
+    </footer>
+</div>
+
+</body>
+</html>
